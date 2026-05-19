@@ -7,7 +7,7 @@ import './About.css';
 const stats = [
   { icon: <FaCode />, label: 'Technologies', value: '10+' },
   { icon: <FaBriefcase />, label: 'Projects', value: '6+' },
-  { icon: <FaMapMarkerAlt />, label: 'Location', value: 'Croatia' },
+  { icon: <FaMapMarkerAlt />, label: 'Location', value: 'Široki Brijeg, BiH' },
 ];
 
 function About() {
@@ -36,7 +36,7 @@ function About() {
             >
               <p className="about-text">
                 Hi, I'm <strong className="gradient-text">Zvonimir Kožul</strong> — a passionate
-                Full Stack Developer based in Croatia. I specialize in building robust web applications
+                Full Stack Developer based in Široki Brijeg. I specialize in building robust web applications
                 from the ground up, combining a clean, responsive frontend with a solid, scalable backend.
               </p>
               <p className="about-text">

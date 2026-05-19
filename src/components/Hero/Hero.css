@@ -10,9 +10,24 @@
 }
 
 .particles-canvas {
-  position: absolute !important;
+  position: absolute;
   inset: 0;
   z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: #06B6D4;
+  animation: float-up linear infinite;
+}
+
+@keyframes float-up {
+  0%   { transform: translateY(0) translateX(0); opacity: inherit; }
+  50%  { transform: translateY(-40px) translateX(15px); }
+  100% { transform: translateY(-80px) translateX(-10px); opacity: 0; }
 }
 
 .hero-container {

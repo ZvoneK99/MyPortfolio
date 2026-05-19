@@ -1,0 +1,39 @@
+* {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #06B6D4;
+  pointer-events: none;
+  z-index: 99999;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.8);
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(6, 182, 212, 0.6);
+  pointer-events: none;
+  z-index: 99998;
+  background: rgba(6, 182, 212, 0.04);
+}
+
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+  * {
+    cursor: auto !important;
+  }
+}

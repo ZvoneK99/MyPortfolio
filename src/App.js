@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Cursor from './components/Cursor/Cursor';
 import NavbarComponent from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -12,6 +13,7 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div className="App">
+      <Cursor />
       <NavbarComponent />
       <Hero />
       <About />

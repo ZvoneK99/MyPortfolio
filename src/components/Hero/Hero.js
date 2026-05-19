@@ -1,44 +1,40 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import './Hero.css';
 
-const particlesOptions = {
-  particles: {
-    number: { value: 55, density: { enable: true, value_area: 900 } },
-    color: { value: ['#06B6D4', '#3B82F6', '#8B5CF6'] },
-    shape: { type: 'circle' },
-    opacity: { value: 0.45, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1 } },
-    size: { value: 2.5, random: true },
-    links: {
-      enable: true,
-      distance: 130,
-      color: '#06B6D4',
-      opacity: 0.12,
-      width: 1,
-    },
-    move: { enable: true, speed: 1.0, direction: 'none', random: true, out_mode: 'out' },
-  },
-  interactivity: {
-    detect_on: 'canvas',
-    events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: false } },
-    modes: { repulse: { distance: 90, duration: 0.4 } },
-  },
-  retina_detect: true,
-};
+const DOTS = Array.from({ length: 40 }, (_, i) => ({
+  id: i,
+  size: Math.random() * 3 + 1.5,
+  x: Math.random() * 100,
+  y: Math.random() * 100,
+  duration: Math.random() * 14 + 10,
+  delay: Math.random() * 8,
+  opacity: Math.random() * 0.35 + 0.1,
+}));
 
 function Hero() {
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-
   return (
     <section id="hero" className="hero-section">
-      <Particles id="tsparticles" init={particlesInit} options={particlesOptions} className="particles-canvas" />
+      <div className="particles-canvas" aria-hidden="true">
+        {DOTS.map((d) => (
+          <span
+            key={d.id}
+            className="particle"
+            style={{
+              width: d.size,
+              height: d.size,
+              left: `${d.x}%`,
+              top: `${d.y}%`,
+              opacity: d.opacity,
+              animationDuration: `${d.duration}s`,
+              animationDelay: `${d.delay}s`,
+            }}
+          />
+        ))}
+      </div>
 
       <Container className="hero-container">
         <Row className="align-items-center hero-row">
@@ -106,13 +102,13 @@ function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.9 }}
               >
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
+                <a href="https://github.com/ZvoneK99" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/zvonimir-kozul/" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="mailto:zvone.kozull1999@gmail.com" className="social-icon" aria-label="Email">
+                <a href="mailto:kozulzvone@gmail.com" className="social-icon" aria-label="Email">
                   <FaEnvelope />
                 </a>
               </motion.div>
