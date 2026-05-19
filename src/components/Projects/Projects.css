@@ -1,0 +1,118 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.filter-btn:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+  color: #06B6D4;
+  background: rgba(6, 182, 212, 0.06);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.2));
+  border-color: rgba(6, 182, 212, 0.5);
+  color: #06B6D4;
+}
+
+.project-card {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(6, 182, 212, 0.25) !important;
+  box-shadow: 0 16px 40px rgba(6, 182, 212, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.project-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-dots span:first-child { background: rgba(239, 68, 68, 0.5); }
+.project-dots span:nth-child(2) { background: rgba(234, 179, 8, 0.5); }
+.project-dots span:last-child { background: rgba(34, 197, 94, 0.5); }
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link {
+  color: #64748b;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  color: #06B6D4;
+  transform: translateY(-2px);
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  color: #06B6D4;
+  letter-spacing: 0.3px;
+}

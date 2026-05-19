@@ -1,0 +1,136 @@
+.experience-section {
+  background: radial-gradient(ellipse at 20% 60%, rgba(6, 182, 212, 0.04) 0%, transparent 55%);
+}
+
+.timeline {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #06B6D4, #3B82F6, transparent);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 72px;
+  margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.2));
+  border: 2px solid rgba(6, 182, 212, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #06B6D4;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.timeline-card {
+  padding: 28px 32px;
+  transition: all 0.25s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(6, 182, 212, 0.25) !important;
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.08);
+}
+
+.timeline-meta {
+  margin-bottom: 8px;
+}
+
+.timeline-period {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #06B6D4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  background: rgba(6, 182, 212, 0.1);
+  border-radius: 6px;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.timeline-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 12px 0 4px;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 18px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.timeline-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #06B6D4;
+  font-size: 0.75rem;
+  top: 3px;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.project-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  color: #06B6D4;
+}
+
+@media (max-width: 576px) {
+  .timeline-card {
+    padding: 20px;
+  }
+  .timeline-item {
+    padding-left: 60px;
+  }
+}

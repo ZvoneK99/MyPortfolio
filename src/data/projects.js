@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    id: 1,
+    title: 'Project Alpha',
+    description: 'A full-stack web application built with React and .NET Web API. Features user authentication, CRUD operations, and a responsive dashboard.',
+    tags: ['React', 'C#', '.NET', 'MySQL'],
+    github: 'https://github.com/',
+    live: null,
+    featured: true,
+  },
+  {
+    id: 2,
+    title: 'E-Commerce Platform',
+    description: 'Online store with product catalog, shopping cart, and payment integration. Backend powered by ASP.NET Core with MySQL database.',
+    tags: ['React', 'C#', '.NET', 'MySQL', 'Bootstrap'],
+    github: 'https://github.com/',
+    live: null,
+    featured: true,
+  },
+  {
+    id: 3,
+    title: 'Task Manager App',
+    description: 'Kanban-style task management tool with drag-and-drop, team collaboration features, and real-time updates.',
+    tags: ['React', 'JavaScript', 'Bootstrap'],
+    github: 'https://github.com/',
+    live: null,
+    featured: false,
+  },
+  {
+    id: 4,
+    title: 'Inventory System',
+    description: 'Desktop-style web application for inventory tracking with reporting, export to Excel, and role-based access control.',
+    tags: ['C#', '.NET', 'MySQL'],
+    github: 'https://github.com/',
+    live: null,
+    featured: false,
+  },
+  {
+    id: 5,
+    title: 'Blog Engine',
+    description: 'Full-featured blogging platform with markdown support, categories, tags, and an admin panel for content management.',
+    tags: ['React', 'JavaScript', 'C#', '.NET', 'MySQL'],
+    github: 'https://github.com/',
+    live: null,
+    featured: false,
+  },
+  {
+    id: 6,
+    title: 'Portfolio Website',
+    description: 'This portfolio — built with React, Bootstrap, and Framer Motion. Glassmorphism design with smooth animations.',
+    tags: ['React', 'JavaScript', 'Bootstrap'],
+    github: 'https://github.com/',
+    live: '#',
+    featured: false,
+  },
+];
+
+export const allTags = ['All', 'React', 'C#', '.NET', 'MySQL', 'JavaScript', 'Bootstrap'];
