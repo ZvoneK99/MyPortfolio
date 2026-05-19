@@ -45,25 +45,25 @@ function Contact() {
                 want to collaborate, or just want to say hi — my inbox is open.
               </p>
               <div className="contact-links">
-                <a href="mailto:zvone.kozull1999@gmail.com" className="contact-link-item">
+                <a href="mailto:kozulzvone@gmail.com" className="contact-link-item">
                   <div className="contact-link-icon"><FaEnvelope /></div>
                   <div>
                     <div className="contact-link-label">Email</div>
-                    <div className="contact-link-value">zvone.kozull1999@gmail.com</div>
+                    <div className="contact-link-value">kozulzvone@gmail.com</div>
                   </div>
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="contact-link-item">
+                <a href="https://github.com/ZvoneK99" target="_blank" rel="noreferrer" className="contact-link-item">
                   <div className="contact-link-icon"><FaGithub /></div>
                   <div>
                     <div className="contact-link-label">GitHub</div>
-                    <div className="contact-link-value">github.com/zvonimirkozul</div>
+                    <div className="contact-link-value">github.com/ZvoneK99</div>
                   </div>
                 </a>
-                <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer" className="contact-link-item">
+                <a href="https://www.linkedin.com/in/zvonimir-kozul/" target="_blank" rel="noreferrer" className="contact-link-item">
                   <div className="contact-link-icon"><FaLinkedin /></div>
                   <div>
                     <div className="contact-link-label">LinkedIn</div>
-                    <div className="contact-link-value">linkedin.com/in/zvonimirkozul</div>
+                    <div className="contact-link-value">linkedin.com/in/Zvonimir Kožul</div>
                   </div>
                 </a>
               </div>
