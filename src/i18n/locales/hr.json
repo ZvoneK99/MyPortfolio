@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "about": "O meni",
+    "skills": "Vještine",
+    "projects": "Projekti",
+    "experience": "Iskustvo",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Pozdrav, ja sam",
+    "role": "Softverski inženjer",
+    "tagline": "Full Stack Developer | .NET · React · MySQL",
+    "viewProjects": "Pogledaj projekte",
+    "downloadCV": "Preuzmi životopis"
+  },
+  "about": {
+    "title": "O",
+    "titleHighlight": "meni",
+    "bio1": "Bok, ja sam <strong>Zvonimir Kožul</strong> — strastveni Full Stack Developer iz Širokog Brijega. Specijaliziram se za izgradnju robusnih web aplikacija od temelja, kombinirajući čisto, responzivno sučelje s pouzdanim i skalabilnim backendom.",
+    "bio2": "Na frontendu radim s <strong>Reactom</strong> i modernim JavaScript/TypeScriptom. Na backendu gradim API-je i servise s <strong>C# / .NET</strong>-om, koristeći <strong>MySQL</strong> kao primarnu relacijsku bazu podataka.",
+    "bio3": "Volim pretvarati složene probleme u jednostavna, elegantna rješenja — i uvijek tražim novi izazov kojim mogu napredovati kao inženjer.",
+    "statTech": "Tehnologije",
+    "statProjects": "Projekti",
+    "statLocation": "Lokacija"
+  },
+  "skills": {
+    "title": "Tehnološki",
+    "titleHighlight": "stek"
+  },
+  "projects": {
+    "title": "Moji",
+    "titleHighlight": "projekti",
+    "filterAll": "Svi",
+    "p1title": "Projekt Alpha",
+    "p1desc": "Full-stack web aplikacija izrađena u Reactu i .NET Web API-ju. Uključuje autentifikaciju korisnika, CRUD operacije i responzivnu nadzornu ploču.",
+    "p2title": "E-Commerce platforma",
+    "p2desc": "Online trgovina s katalogom proizvoda, košaricom i integracijom plaćanja. Backend pokreće ASP.NET Core s MySQL bazom podataka.",
+    "p3title": "Aplikacija za upravljanje zadacima",
+    "p3desc": "Kanban alat za upravljanje zadacima s povuci-i-ispusti funkcijom, timskom suradnjom i ažuriranjima u stvarnom vremenu.",
+    "p4title": "Sustav upravljanja zalihama",
+    "p4desc": "Web aplikacija za praćenje zaliha s izvještavanjem, izvozom u Excel i kontrolom pristupa temeljenom na ulogama.",
+    "p5title": "Blog platforma",
+    "p5desc": "Potpuno opremljena blogging platforma s podrškom za Markdown, kategorijama, oznakama i admin pločom za upravljanje sadržajem.",
+    "p6title": "Portfolio web stranica",
+    "p6desc": "Ovaj portfolio — izrađen u Reactu, Bootstrapu i Framer Motionu. Glassmorphism dizajn s glatkim animacijama."
+  },
+  "experience": {
+    "title": "Radno",
+    "titleHighlight": "iskustvo",
+    "job1role": "Full Stack Developer pripravnik",
+    "job1company": "Naziv tvrtke",
+    "job1period": "Sij 2024 – danas",
+    "job1b1": "Razvijao i održavao web aplikacije koristeći React i ASP.NET Core",
+    "job1b2": "Dizajnirao i optimizirao MySQL sheme baza podataka za bolje performanse",
+    "job1b3": "Surađivao s timom koristeći Git i agilne metodologije",
+    "job2role": "Junior web developer",
+    "job2company": "Druga tvrtka",
+    "job2period": "Lip 2023 – Pro 2023",
+    "job2b1": "Izrađivao responzivna frontendska sučelja s HTML-om, CSS-om, JavaScriptom i Bootstrapom",
+    "job2b2": "Integrirao REST API-je i implementirao validaciju obrazaca na strani klijenta",
+    "job2b3": "Sudjelovao u pregledima koda i doprinosio internim alatima"
+  },
+  "contact": {
+    "title": "Kontaktiraj",
+    "titleHighlight": "me",
+    "infoTitle": "Radimo zajedno",
+    "infoText": "Trenutno sam otvoren za nove prilike. Bilo da imate projekt na umu, želite surađivati ili samo pozdraviti — moj inbox je otvoren.",
+    "labelEmail": "Email",
+    "labelGitHub": "GitHub",
+    "labelLinkedIn": "LinkedIn",
+    "formName": "Ime",
+    "formNamePlaceholder": "Vaše ime",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "vas@email.com",
+    "formMessage": "Poruka",
+    "formMessagePlaceholder": "Recite mi o svom projektu...",
+    "send": "Pošalji poruku",
+    "sending": "Slanje...",
+    "successTitle": "Poruka poslana!",
+    "successText": "Hvala na javljanju. Odgovoriću vam uskoro."
+  },
+  "footer": {
+    "built": "Izrađeno s",
+    "using": "koristeći React & Bootstrap",
+    "rights": "Sva prava pridržana."
+  }
+}

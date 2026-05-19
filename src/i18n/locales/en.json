@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi there, I'm",
+    "role": "Software Engineer",
+    "tagline": "Full Stack Developer | .NET · React · MySQL",
+    "viewProjects": "View Projects",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Me",
+    "bio1": "Hi, I'm <strong>Zvonimir Kožul</strong> — a passionate Full Stack Developer based in Široki Brijeg. I specialize in building robust web applications from the ground up, combining a clean, responsive frontend with a solid, scalable backend.",
+    "bio2": "On the frontend I work with <strong>React</strong> and modern JavaScript/TypeScript. On the backend I build APIs and services with <strong>C# / .NET</strong>, using <strong>MySQL</strong> as my go-to relational database.",
+    "bio3": "I love turning complex problems into simple, beautiful solutions — and I'm always looking for the next challenge to grow as an engineer.",
+    "statTech": "Technologies",
+    "statProjects": "Projects",
+    "statLocation": "Location"
+  },
+  "skills": {
+    "title": "Tech",
+    "titleHighlight": "Stack"
+  },
+  "projects": {
+    "title": "My",
+    "titleHighlight": "Projects",
+    "filterAll": "All",
+    "p1title": "Project Alpha",
+    "p1desc": "A full-stack web application built with React and .NET Web API. Features user authentication, CRUD operations, and a responsive dashboard.",
+    "p2title": "E-Commerce Platform",
+    "p2desc": "Online store with product catalog, shopping cart, and payment integration. Backend powered by ASP.NET Core with MySQL database.",
+    "p3title": "Task Manager App",
+    "p3desc": "Kanban-style task management tool with drag-and-drop, team collaboration features, and real-time updates.",
+    "p4title": "Inventory System",
+    "p4desc": "Desktop-style web application for inventory tracking with reporting, export to Excel, and role-based access control.",
+    "p5title": "Blog Engine",
+    "p5desc": "Full-featured blogging platform with markdown support, categories, tags, and an admin panel for content management.",
+    "p6title": "Portfolio Website",
+    "p6desc": "This portfolio — built with React, Bootstrap, and Framer Motion. Glassmorphism design with smooth animations."
+  },
+  "experience": {
+    "title": "Work",
+    "titleHighlight": "Experience",
+    "job1role": "Full Stack Developer Intern",
+    "job1company": "Company Name",
+    "job1period": "Jan 2024 – Present",
+    "job1b1": "Developed and maintained web applications using React and ASP.NET Core",
+    "job1b2": "Designed and optimized MySQL database schemas for improved performance",
+    "job1b3": "Collaborated with the team using Git and agile methodologies",
+    "job2role": "Junior Web Developer",
+    "job2company": "Another Company",
+    "job2period": "Jun 2023 – Dec 2023",
+    "job2b1": "Built responsive frontend interfaces with HTML, CSS, JavaScript, and Bootstrap",
+    "job2b2": "Integrated REST APIs and implemented form validation on the client side",
+    "job2b3": "Participated in code reviews and contributed to internal tooling"
+  },
+  "contact": {
+    "title": "Get In",
+    "titleHighlight": "Touch",
+    "infoTitle": "Let's work together",
+    "infoText": "I'm currently open to new opportunities. Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is open.",
+    "labelEmail": "Email",
+    "labelGitHub": "GitHub",
+    "labelLinkedIn": "LinkedIn",
+    "formName": "Name",
+    "formNamePlaceholder": "Your name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "your@email.com",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Tell me about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successText": "Thanks for reaching out. I'll get back to you soon."
+  },
+  "footer": {
+    "built": "Built with",
+    "using": "using React & Bootstrap",
+    "rights": "All rights reserved."
+  }
+}

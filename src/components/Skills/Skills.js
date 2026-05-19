@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { skillCategories } from '../../data/skills';
 import './Skills.css';
 
 function Skills() {
+  const { t } = useTranslation();
+
   return (
     <section id="skills" className="skills-section">
       <Container>
@@ -15,7 +18,9 @@ function Skills() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Tech <span className="gradient-text">Stack</span></h2>
+          <h2 className="section-title">
+            {t('skills.title')} <span className="gradient-text">{t('skills.titleHighlight')}</span>
+          </h2>
           <div className="section-divider" />
         </motion.div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import './Hero.css';
@@ -16,6 +17,8 @@ const DOTS = Array.from({ length: 40 }, (_, i) => ({
 }));
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id="hero" className="hero-section">
       <div className="particles-canvas" aria-hidden="true">
@@ -44,64 +47,34 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, ease: 'easeOut' }}
             >
-              <motion.p
-                className="hero-greeting"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-              >
-                Hi there, I'm
+              <motion.p className="hero-greeting" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
+                {t('hero.greeting')}
               </motion.p>
 
-              <motion.h1
-                className="hero-name"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
+              <motion.h1 className="hero-name" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }}>
                 Zvonimir <span className="gradient-text">Kožul</span>
               </motion.h1>
 
-              <motion.h2
-                className="hero-role"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.45, duration: 0.7 }}
-              >
-                Software Engineer
+              <motion.h2 className="hero-role" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.7 }}>
+                {t('hero.role')}
               </motion.h2>
 
-              <motion.p
-                className="hero-tagline"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6 }}
-              >
-                Full Stack Developer | .NET · React · MySQL
+              <motion.p className="hero-tagline" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+                {t('hero.tagline')}
               </motion.p>
 
-              <motion.div
-                className="hero-actions"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.75 }}
-              >
+              <motion.div className="hero-actions" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.75 }}>
                 <Link to="projects" smooth duration={600} offset={-70}>
-                  <button className="btn-primary-glass hero-btn">View Projects</button>
+                  <button className="btn-primary-glass hero-btn">{t('hero.viewProjects')}</button>
                 </Link>
                 <a href="/cv.pdf" download className="hero-btn-link">
                   <button className="btn-outline-glass hero-btn">
-                    <FaFileDownload className="me-2" /> Download CV
+                    <FaFileDownload className="me-2" /> {t('hero.downloadCV')}
                   </button>
                 </a>
               </motion.div>
 
-              <motion.div
-                className="hero-socials"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.9 }}
-              >
+              <motion.div className="hero-socials" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }}>
                 <a href="https://github.com/ZvoneK99" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
                   <FaGithub />
                 </a>
@@ -134,12 +107,7 @@ function Hero() {
           </Col>
         </Row>
 
-        <motion.div
-          className="scroll-down"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
+        <motion.div className="scroll-down" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
           <Link to="about" smooth duration={600} offset={-70} className="scroll-link">
             <FaArrowDown className="scroll-arrow" />
           </Link>

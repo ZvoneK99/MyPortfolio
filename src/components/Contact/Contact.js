@@ -1,12 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
 import './Contact.css';
 
 function Contact() {
+  const { t } = useTranslation();
   const formRef = useRef(null);
-  const [status, setStatus] = useState('idle'); // idle | sending | sent | error
+  const [status, setStatus] = useState('idle');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +28,9 @@ function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Get In <span className="gradient-text">Touch</span></h2>
+          <h2 className="section-title">
+            {t('contact.title')} <span className="gradient-text">{t('contact.titleHighlight')}</span>
+          </h2>
           <div className="section-divider" />
         </motion.div>
 
@@ -39,30 +43,27 @@ function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <h4 className="contact-info-title">Let's work together</h4>
-              <p className="contact-info-text">
-                I'm currently open to new opportunities. Whether you have a project in mind,
-                want to collaborate, or just want to say hi — my inbox is open.
-              </p>
+              <h4 className="contact-info-title">{t('contact.infoTitle')}</h4>
+              <p className="contact-info-text">{t('contact.infoText')}</p>
               <div className="contact-links">
                 <a href="mailto:kozulzvone@gmail.com" className="contact-link-item">
                   <div className="contact-link-icon"><FaEnvelope /></div>
                   <div>
-                    <div className="contact-link-label">Email</div>
+                    <div className="contact-link-label">{t('contact.labelEmail')}</div>
                     <div className="contact-link-value">kozulzvone@gmail.com</div>
                   </div>
                 </a>
                 <a href="https://github.com/ZvoneK99" target="_blank" rel="noreferrer" className="contact-link-item">
                   <div className="contact-link-icon"><FaGithub /></div>
                   <div>
-                    <div className="contact-link-label">GitHub</div>
+                    <div className="contact-link-label">{t('contact.labelGitHub')}</div>
                     <div className="contact-link-value">github.com/ZvoneK99</div>
                   </div>
                 </a>
                 <a href="https://www.linkedin.com/in/zvonimir-kozul/" target="_blank" rel="noreferrer" className="contact-link-item">
                   <div className="contact-link-icon"><FaLinkedin /></div>
                   <div>
-                    <div className="contact-link-label">LinkedIn</div>
+                    <div className="contact-link-label">{t('contact.labelLinkedIn')}</div>
                     <div className="contact-link-value">linkedin.com/in/Zvonimir Kožul</div>
                   </div>
                 </a>
@@ -81,48 +82,26 @@ function Contact() {
               {status === 'sent' ? (
                 <div className="form-success">
                   <FaPaperPlane className="success-icon" />
-                  <h5>Message sent!</h5>
-                  <p>Thanks for reaching out. I'll get back to you soon.</p>
+                  <h5>{t('contact.successTitle')}</h5>
+                  <p>{t('contact.successText')}</p>
                 </div>
               ) : (
                 <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label className="form-label-custom">Name</label>
-                    <input
-                      type="text"
-                      name="from_name"
-                      className="form-input"
-                      placeholder="Your name"
-                      required
-                    />
+                    <label className="form-label-custom">{t('contact.formName')}</label>
+                    <input type="text" name="from_name" className="form-input" placeholder={t('contact.formNamePlaceholder')} required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label-custom">Email</label>
-                    <input
-                      type="email"
-                      name="reply_to"
-                      className="form-input"
-                      placeholder="your@email.com"
-                      required
-                    />
+                    <label className="form-label-custom">{t('contact.formEmail')}</label>
+                    <input type="email" name="reply_to" className="form-input" placeholder={t('contact.formEmailPlaceholder')} required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label-custom">Message</label>
-                    <textarea
-                      name="message"
-                      className="form-input form-textarea"
-                      placeholder="Tell me about your project..."
-                      rows={5}
-                      required
-                    />
+                    <label className="form-label-custom">{t('contact.formMessage')}</label>
+                    <textarea name="message" className="form-input form-textarea" placeholder={t('contact.formMessagePlaceholder')} rows={5} required />
                   </div>
-                  <button
-                    type="submit"
-                    className="btn-primary-glass submit-btn"
-                    disabled={status === 'sending'}
-                  >
+                  <button type="submit" className="btn-primary-glass submit-btn" disabled={status === 'sending'}>
                     <FaPaperPlane className="me-2" />
-                    {status === 'sending' ? 'Sending...' : 'Send Message'}
+                    {status === 'sending' ? t('contact.sending') : t('contact.send')}
                   </button>
                 </form>
               )}

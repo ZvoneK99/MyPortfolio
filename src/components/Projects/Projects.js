@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projects, allTags } from '../../data/projects';
 import './Projects.css';
 
 function Projects() {
+  const { t } = useTranslation();
   const [activeTag, setActiveTag] = useState('All');
+
+  const getFilterLabel = (tag) => tag === 'All' ? t('projects.filterAll') : tag;
 
   const filtered = activeTag === 'All'
     ? projects
@@ -22,7 +26,9 @@ function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">My <span className="gradient-text">Projects</span></h2>
+          <h2 className="section-title">
+            {t('projects.title')} <span className="gradient-text">{t('projects.titleHighlight')}</span>
+          </h2>
           <div className="section-divider" />
         </motion.div>
 
@@ -39,7 +45,7 @@ function Projects() {
               className={`filter-btn${activeTag === tag ? ' active' : ''}`}
               onClick={() => setActiveTag(tag)}
             >
-              {tag}
+              {getFilterLabel(tag)}
             </button>
           ))}
         </motion.div>
@@ -63,9 +69,7 @@ function Projects() {
                     whileHover={{ y: -6 }}
                   >
                     <div className="project-header">
-                      <div className="project-dots">
-                        <span /><span /><span />
-                      </div>
+                      <div className="project-dots"><span /><span /><span /></div>
                       <div className="project-links">
                         {project.github && (
                           <a href={project.github} target="_blank" rel="noreferrer" className="project-link" aria-label="GitHub">
@@ -79,8 +83,8 @@ function Projects() {
                         )}
                       </div>
                     </div>
-                    <h5 className="project-title">{project.title}</h5>
-                    <p className="project-description">{project.description}</p>
+                    <h5 className="project-title">{t(`projects.p${project.id}title`)}</h5>
+                    <p className="project-description">{t(`projects.p${project.id}desc`)}</p>
                     <div className="project-tags">
                       {project.tags.map((tag) => (
                         <span key={tag} className="project-tag">{tag}</span>

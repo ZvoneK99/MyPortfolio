@@ -1,16 +1,19 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { FaMapMarkerAlt, FaBriefcase, FaCode } from 'react-icons/fa';
 import './About.css';
 
-const stats = [
-  { icon: <FaCode />, label: 'Technologies', value: '10+' },
-  { icon: <FaBriefcase />, label: 'Projects', value: '6+' },
-  { icon: <FaMapMarkerAlt />, label: 'Location', value: 'Široki Brijeg, BiH' },
-];
-
 function About() {
+  const { t } = useTranslation();
+
+  const stats = [
+    { icon: <FaCode />, labelKey: 'about.statTech', value: '10+' },
+    { icon: <FaBriefcase />, labelKey: 'about.statProjects', value: '6+' },
+    { icon: <FaMapMarkerAlt />, labelKey: 'about.statLocation', value: 'Široki Brijeg, BiH' },
+  ];
+
   return (
     <section id="about">
       <Container>
@@ -21,7 +24,9 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
+          <h2 className="section-title">
+            {t('about.title')} <span className="gradient-text">{t('about.titleHighlight')}</span>
+          </h2>
           <div className="section-divider" />
         </motion.div>
 
@@ -34,20 +39,9 @@ function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <p className="about-text">
-                Hi, I'm <strong className="gradient-text">Zvonimir Kožul</strong> — a passionate
-                Full Stack Developer based in Široki Brijeg. I specialize in building robust web applications
-                from the ground up, combining a clean, responsive frontend with a solid, scalable backend.
-              </p>
-              <p className="about-text">
-                On the frontend I work with <strong>React</strong> and modern JavaScript/TypeScript.
-                On the backend I build APIs and services with <strong>C# / .NET</strong>, using
-                <strong> MySQL</strong> as my go-to relational database.
-              </p>
-              <p className="about-text">
-                I love turning complex problems into simple, beautiful solutions — and I'm always looking
-                for the next challenge to grow as an engineer.
-              </p>
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t('about.bio1') }} />
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t('about.bio2') }} />
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t('about.bio3') }} />
             </motion.div>
           </Col>
 
@@ -61,12 +55,12 @@ function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: i * 0.15 }}
-                    whileHover={{ scale: 1.02, borderColor: 'rgba(6,182,212,0.3)' }}
+                    whileHover={{ scale: 1.02 }}
                   >
                     <div className="stat-icon">{stat.icon}</div>
                     <div>
                       <div className="stat-value">{stat.value}</div>
-                      <div className="stat-label">{stat.label}</div>
+                      <div className="stat-label">{t(stat.labelKey)}</div>
                     </div>
                   </motion.div>
                 </Col>
