@@ -1,4 +1,6 @@
 .App {
   background-color: #030712;
   min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
