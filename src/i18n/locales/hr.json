@@ -44,7 +44,9 @@
     "p6title": "Central Station",
     "p6desc": "Platforma za online naručivanje hrane za fast-food restoran u Širokom Brijegu. Uključuje kategorizirani jelovnik s prilagodbom stavki i dodacima, košaricu, dnevne specijalitete te naručivanje putem web stranice, WhatsAppa ili telefona. Sadrži CMS za upravljanje sadržajem.",
     "p7title": "Ave Timer",
-    "p7desc": "Windows desktop aplikacija koja vas podsjeća na pauzu od 5 minuta svakih 55 minuta kako bi se smanjio zamor očiju i poboljšala produktivnost."
+    "p7desc": "Windows desktop aplikacija koja vas podsjeća na pauzu od 5 minuta svakih 55 minuta kako bi se smanjio zamor očiju i poboljšala produktivnost.",
+    "p8title": "To-Do List",
+    "p8desc": "Uredna web aplikacija za upravljanje zadacima izrađena u Reactu i Viteu. Omogućuje dodavanje, dovršavanje i brisanje zadataka s responzivnim, CSS-ovima vođenim sučeljem."
   },
   "experience": {
     "title": "Radno",

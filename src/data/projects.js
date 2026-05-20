@@ -62,6 +62,15 @@ export const projects = [
     live: null,
     featured: false,
   },
+  {
+    id: 8,
+    title: 'To-Do List',
+    description: 'A clean task management web app built with React and Vite. Allows users to add, complete, and remove tasks with a responsive, CSS-driven interface.',
+    tags: ['React', 'JavaScript', 'CSS'],
+    github: 'https://github.com/ZvoneK99/ToDoList',
+    live: null,
+    featured: false,
+  },
 ];
 
 export const allTags = ['All', 'React', 'C#', '.NET', 'MySQL', 'JavaScript', 'Bootstrap'];

@@ -44,7 +44,9 @@
     "p6title": "Central Station",
     "p6desc": "Online food ordering platform for a fast-food restaurant in Široki Brijeg. Features a categorized menu with item customization and add-ons, shopping cart, daily specials, and order placement via website, WhatsApp, or phone. Includes a CMS for content management.",
     "p7title": "Ave Timer",
-    "p7desc": "Windows desktop application that reminds you to take a 5-minute break every 55 minutes to reduce eye strain and improve productivity."
+    "p7desc": "Windows desktop application that reminds you to take a 5-minute break every 55 minutes to reduce eye strain and improve productivity.",
+    "p8title": "To-Do List",
+    "p8desc": "A clean task management web app built with React and Vite. Allows users to add, complete, and remove tasks with a responsive, CSS-driven interface."
   },
   "experience": {
     "title": "Work",
