@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 function Footer() {
