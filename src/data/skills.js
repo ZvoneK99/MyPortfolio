@@ -1,6 +1,6 @@
 import {
   SiReact, SiJavascript, SiTypescript, SiHtml5, SiCss,
-  SiDotnet, SiMysql, SiGit, SiGithub, SiBootstrap, SiNodedotjs
+  SiDotnet, SiMysql, SiGit, SiGithub, SiBootstrap
 } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
 
