@@ -89,8 +89,7 @@
     "errorRetry": "Try again"
   },
   "footer": {
-    "built": "Built with",
-    "using": "using React & Bootstrap",
+    "createdBy": "Created by",
     "rights": "All rights reserved."
   }
 }

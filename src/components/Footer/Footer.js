@@ -11,9 +11,8 @@ function Footer() {
     <footer className="site-footer">
       <Container>
         <div className="footer-inner">
-          <span className="footer-brand">ZK<span className="brand-dot">.</span></span>
           <p className="footer-text">
-            {t('footer.built')} <FaHeart className="heart-icon" /> {t('footer.using')}
+            {t('footer.createdBy')} <span className="footer-brand-inline">ZK<span className="brand-dot">.</span></span>
           </p>
           <div className="footer-socials">
             <a href="https://github.com/ZvoneK99" target="_blank" rel="noreferrer" className="footer-social" aria-label="GitHub">

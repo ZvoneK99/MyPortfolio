@@ -89,8 +89,7 @@
     "errorRetry": "Pokušaj ponovo"
   },
   "footer": {
-    "built": "Izrađeno s",
-    "using": "koristeći React & Bootstrap",
+    "createdBy": "Izradio",
     "rights": "Sva prava pridržana."
   }
 }
