@@ -71,6 +71,33 @@ export const projects = [
     live: null,
     featured: false,
   },
+  {
+    id: 9,
+    title: 'RescueEquip Web Shop',
+    description: 'College final project — a full e-commerce platform for mountaineering and rescue equipment. Features a product catalog with categories, AJAX shopping cart, checkout with address and delivery options, product search, and a SQL Server database with stored procedures.',
+    tags: ['VB.NET', '.NET', 'JavaScript', 'Bootstrap'],
+    github: 'https://github.com/ZvoneK99/Web-Shop',
+    live: null,
+    featured: true,
+  },
+  {
+    id: 10,
+    title: 'PlayNest',
+    description: 'College project — a cross-platform mobile app built with React Native and Expo. Includes three mini-games (Tic Tac Toe, Hangman, Math Quiz), user authentication via Supabase, profile management with photo upload, and a global leaderboard.',
+    tags: ['React', 'JavaScript'],
+    github: 'https://github.com/ZvoneK99/PlayNest',
+    live: null,
+    featured: false,
+  },
+  {
+    id: 11,
+    title: 'NFC Relay System',
+    description: 'College project — a two-part system: a React Native mobile app scans NFC tags and POSTs the data to Supabase, while a React + Vite web dashboard receives live updates via WebSocket and displays each scan as a card in real time.',
+    tags: ['React', 'TypeScript', 'JavaScript'],
+    github: 'https://github.com/ZvoneK99/nfc-web',
+    live: null,
+    featured: false,
+  },
 ];
 
 export const allTags = ['All', 'React', 'C#', '.NET', 'MySQL', 'JavaScript', 'Bootstrap'];

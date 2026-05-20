@@ -46,7 +46,13 @@
     "p7title": "Ave Timer",
     "p7desc": "Windows desktop aplikacija koja vas podsjeća na pauzu od 5 minuta svakih 55 minuta kako bi se smanjio zamor očiju i poboljšala produktivnost.",
     "p8title": "To-Do List",
-    "p8desc": "Uredna web aplikacija za upravljanje zadacima izrađena u Reactu i Viteu. Omogućuje dodavanje, dovršavanje i brisanje zadataka s responzivnim, CSS-ovima vođenim sučeljem."
+    "p8desc": "Uredna web aplikacija za upravljanje zadacima izrađena u Reactu i Viteu. Omogućuje dodavanje, dovršavanje i brisanje zadataka s responzivnim, CSS-ovima vođenim sučeljem.",
+    "p9title": "RescueEquip Web Shop",
+    "p9desc": "Završni projekt na fakultetu — potpuna e-commerce platforma za prodaju planinarske i spasilačke opreme. Uključuje katalog proizvoda s kategorijama, AJAX košaricu, naplatu s opcijama adrese i dostave, pretragu proizvoda te SQL Server bazu podataka s pohranjenim procedurama.",
+    "p10title": "PlayNest",
+    "p10desc": "Fakultetski projekt — cross-platform mobilna aplikacija izrađena u React Nativeu i Expou. Uključuje tri mini-igre (Iks-oks, Vješala, Matematički kviz), autentifikaciju korisnika putem Supabasea, upravljanje profilom s učitavanjem fotografije te globalnu ljestvicu rezultata.",
+    "p11title": "NFC Relay System",
+    "p11desc": "Fakultetski projekt — dvodjelni sustav: React Native mobilna aplikacija čita NFC tagove i šalje podatke u Supabase, dok React + Vite web dashboard prima ažuriranja u stvarnom vremenu putem WebSocketa i prikazuje svako skeniranje kao karticu."
   },
   "experience": {
     "title": "Radno",
