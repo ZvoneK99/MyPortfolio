@@ -52,7 +52,9 @@
     "p10title": "PlayNest",
     "p10desc": "Fakultetski projekt — cross-platform mobilna aplikacija izrađena u React Nativeu i Expou. Uključuje tri mini-igre (Iks-oks, Vješala, Matematički kviz), autentifikaciju korisnika putem Supabasea, upravljanje profilom s učitavanjem fotografije te globalnu ljestvicu rezultata.",
     "p11title": "NFC Relay System",
-    "p11desc": "Fakultetski projekt — dvodjelni sustav: React Native mobilna aplikacija čita NFC tagove i šalje podatke u Supabase, dok React + Vite web dashboard prima ažuriranja u stvarnom vremenu putem WebSocketa i prikazuje svako skeniranje kao karticu."
+    "p11desc": "Fakultetski projekt — dvodjelni sustav: React Native mobilna aplikacija čita NFC tagove i šalje podatke u Supabase, dok React + Vite web dashboard prima ažuriranja u stvarnom vremenu putem WebSocketa i prikazuje svako skeniranje kao karticu.",
+    "p12title": "Currency Calculator",
+    "p12desc": "Osobni projekt za učenje — React aplikacija za konverziju valuta u stvarnom vremenu. Dohvaća aktualne tečajeve s vanjskog API-ja i podržava konverziju između više valuta."
   },
   "experience": {
     "title": "Radno",

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaBuilding } from 'react-icons/fa';
 import { projects } from '../../data/projects';
 import './Projects.css';
 
@@ -51,6 +51,11 @@ function Projects() {
                     )}
                   </div>
                 </div>
+                {project.org && (
+                  <span className={`org-badge org-badge--${project.org === 'AVE STUDIO' ? 'ave' : project.org === 'FSRE' ? 'fsre' : 'personal'}`}>
+                    <FaBuilding className="org-badge-icon" /> {project.org}
+                  </span>
+                )}
                 <h5 className="project-title">{t(`projects.p${project.id}title`)}</h5>
                 <p className="project-description">{t(`projects.p${project.id}desc`)}</p>
                 <div className="project-tags">

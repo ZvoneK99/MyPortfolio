@@ -52,7 +52,9 @@
     "p10title": "PlayNest",
     "p10desc": "College project — a cross-platform mobile app built with React Native and Expo. Includes three mini-games (Tic Tac Toe, Hangman, Math Quiz), user authentication via Supabase, profile management with photo upload, and a global leaderboard.",
     "p11title": "NFC Relay System",
-    "p11desc": "College project — a two-part system: a React Native mobile app scans NFC tags and POSTs the data to Supabase, while a React + Vite web dashboard receives live updates via WebSocket and displays each scan as a card in real time."
+    "p11desc": "College project — a two-part system: a React Native mobile app scans NFC tags and POSTs the data to Supabase, while a React + Vite web dashboard receives live updates via WebSocket and displays each scan as a card in real time.",
+    "p12title": "Currency Calculator",
+    "p12desc": "A personal learning project — a React app for real-time currency conversion. Fetches live exchange rates from an external API and supports conversion between multiple currencies."
   },
   "experience": {
     "title": "Work",
