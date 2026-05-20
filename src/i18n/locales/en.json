@@ -57,18 +57,12 @@
   "experience": {
     "title": "Work",
     "titleHighlight": "Experience",
-    "job1role": "Full Stack Developer Intern",
-    "job1company": "Company Name",
-    "job1period": "Jan 2024 – Present",
-    "job1b1": "Developed and maintained web applications using React and ASP.NET Core",
-    "job1b2": "Designed and optimized MySQL database schemas for improved performance",
-    "job1b3": "Collaborated with the team using Git and agile methodologies",
-    "job2role": "Junior Web Developer",
-    "job2company": "Another Company",
-    "job2period": "Jun 2023 – Dec 2023",
-    "job2b1": "Built responsive frontend interfaces with HTML, CSS, JavaScript, and Bootstrap",
-    "job2b2": "Integrated REST APIs and implemented form validation on the client side",
-    "job2b3": "Participated in code reviews and contributed to internal tooling"
+    "job1role": "Software Developer",
+    "job1company": "AVE STUDIO",
+    "job1period": "Mar 2025 – Present",
+    "job1b1": "Developed and maintained dynamic websites and e-commerce platforms for diverse clients using ASP.NET, React, and MSSQL",
+    "job1b2": "Collaborated closely with clients to understand their requirements, ensuring tailored solutions that enhance user experience",
+    "job1b3": "Built responsive frontends with React and Bootstrap, and implemented backend logic in C# and VB.NET"
   },
   "contact": {
     "title": "Get In",

@@ -57,18 +57,12 @@
   "experience": {
     "title": "Radno",
     "titleHighlight": "iskustvo",
-    "job1role": "Full Stack Developer pripravnik",
-    "job1company": "Naziv tvrtke",
-    "job1period": "Sij 2024 – danas",
-    "job1b1": "Razvijao i održavao web aplikacije koristeći React i ASP.NET Core",
-    "job1b2": "Dizajnirao i optimizirao MySQL sheme baza podataka za bolje performanse",
-    "job1b3": "Surađivao s timom koristeći Git i agilne metodologije",
-    "job2role": "Junior web developer",
-    "job2company": "Druga tvrtka",
-    "job2period": "Lip 2023 – Pro 2023",
-    "job2b1": "Izrađivao responzivna frontendska sučelja s HTML-om, CSS-om, JavaScriptom i Bootstrapom",
-    "job2b2": "Integrirao REST API-je i implementirao validaciju obrazaca na strani klijenta",
-    "job2b3": "Sudjelovao u pregledima koda i doprinosio internim alatima"
+    "job1role": "Software Developer",
+    "job1company": "AVE STUDIO",
+    "job1period": "Ožu 2025 – danas",
+    "job1b1": "Razvijao i održavao dinamične web stranice i e-commerce platforme za raznovrsne klijente koristeći ASP.NET, React i MSSQL",
+    "job1b2": "Blisko surađivao s klijentima na razumijevanju njihovih zahtjeva, osiguravajući prilagođena rješenja koja poboljšavaju korisničko iskustvo",
+    "job1b3": "Izrađivao responzivne frontende u Reactu i Bootstrapu te implementirao backend logiku u C#-u i VB.NET-u"
   },
   "contact": {
     "title": "Kontaktiraj",

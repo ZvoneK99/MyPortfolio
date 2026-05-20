@@ -15,15 +15,7 @@ function Experience() {
       companyKey: 'experience.job1company',
       periodKey: 'experience.job1period',
       bullets: ['experience.job1b1', 'experience.job1b2', 'experience.job1b3'],
-      tags: ['React', 'C#', '.NET', 'MySQL'],
-    },
-    {
-      id: 2,
-      roleKey: 'experience.job2role',
-      companyKey: 'experience.job2company',
-      periodKey: 'experience.job2period',
-      bullets: ['experience.job2b1', 'experience.job2b2', 'experience.job2b3'],
-      tags: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+      tags: ['React', 'C#', 'VB.NET', '.NET', 'JavaScript', 'Bootstrap'],
     },
   ];
 

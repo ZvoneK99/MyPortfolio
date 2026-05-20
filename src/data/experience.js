@@ -11,16 +11,5 @@ export const experiences = [
     ],
     tags: ['React', 'C#', '.NET', 'MySQL'],
   },
-  {
-    id: 2,
-    role: 'Junior Web Developer',
-    company: 'Another Company',
-    period: 'Jun 2023 – Dec 2023',
-    description: [
-      'Built responsive frontend interfaces with HTML, CSS, JavaScript, and Bootstrap',
-      'Integrated REST APIs and implemented form validation on the client side',
-      'Participated in code reviews and contributed to internal tooling',
-    ],
-    tags: ['JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-  },
+
 ];
