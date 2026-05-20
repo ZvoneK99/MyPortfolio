@@ -83,7 +83,10 @@
     "send": "Send Message",
     "sending": "Sending...",
     "successTitle": "Message sent!",
-    "successText": "Thanks for reaching out. I'll get back to you soon."
+    "successText": "Thanks for reaching out. I'll get back to you soon.",
+    "errorTitle": "Something went wrong.",
+    "errorText": "Your message couldn't be sent. Please try again or email me directly.",
+    "errorRetry": "Try again"
   },
   "footer": {
     "built": "Built with",

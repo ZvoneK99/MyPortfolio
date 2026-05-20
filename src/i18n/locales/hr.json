@@ -83,7 +83,10 @@
     "send": "Pošalji poruku",
     "sending": "Slanje...",
     "successTitle": "Poruka poslana!",
-    "successText": "Hvala na javljanju. Odgovoriću vam uskoro."
+    "successText": "Hvala na javljanju. Odgovoriću vam uskoro.",
+    "errorTitle": "Nešto je pošlo po krivu.",
+    "errorText": "Poruka nije mogla biti poslana. Pokušajte ponovo ili me kontaktirajte direktno putem e-maila.",
+    "errorRetry": "Pokušaj ponovo"
   },
   "footer": {
     "built": "Izrađeno s",

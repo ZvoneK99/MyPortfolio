@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 function Contact() {
@@ -13,9 +14,17 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    // Wire up EmailJS here when ready:
-    // await emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', formRef.current, 'PUBLIC_KEY');
-    setTimeout(() => setStatus('sent'), 1000);
+    try {
+      await emailjs.sendForm(
+        'service_drovi6g',
+        'template_oo4v94q',
+        formRef.current,
+        'oRXC_lwxxWF3J_8zt'
+      );
+      setStatus('sent');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -84,6 +93,12 @@ function Contact() {
                   <FaPaperPlane className="success-icon" />
                   <h5>{t('contact.successTitle')}</h5>
                   <p>{t('contact.successText')}</p>
+                </div>
+              ) : status === 'error' ? (
+                <div className="form-success">
+                  <h5>{t('contact.errorTitle')}</h5>
+                  <p>{t('contact.errorText')}</p>
+                  <button className="btn-outline-glass mt-3" onClick={() => setStatus('idle')}>{t('contact.errorRetry')}</button>
                 </div>
               ) : (
                 <form ref={formRef} onSubmit={handleSubmit}>
