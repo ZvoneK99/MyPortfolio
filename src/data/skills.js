@@ -21,7 +21,6 @@ export const skillCategories = [
     skills: [
       { name: 'C#', Icon: TbBrandCSharp, color: '#239120' },
       { name: '.NET', Icon: SiDotnet, color: '#512BD4' },
-      { name: 'Node.js', Icon: SiNodedotjs, color: '#339933' },
     ],
   },
   {
