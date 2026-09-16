@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import profilePhoto from '../../Datoteke/profilna.jpeg';
+import cvFile from "../../Datoteke/CV/Zvonimir Kožul's Resume.pdf";
 import './Hero.css';
 
 function Hero() {
@@ -47,7 +48,7 @@ function Hero() {
                 <Link to="projects" smooth duration={600} offset={-70}>
                   <button className="btn-terminal-primary hero-btn">{t('hero.viewProjects')} →</button>
                 </Link>
-                <a href="/cv.pdf" download className="hero-btn-link">
+                <a href={cvFile} download="Zvonimir Kožul's Resume.pdf" className="hero-btn-link">
                   <button className="btn-terminal-outline hero-btn">
                     <FaFileDownload className="me-2" /> {t('hero.downloadCV')}
                   </button>
