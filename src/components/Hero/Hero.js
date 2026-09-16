@@ -87,24 +87,24 @@ function Hero() {
                 </div>
 
                 <div className="terminal-field">
-                  <span className="field-key">// NAME</span>
+                  <span className="field-key">{'// NAME'}</span>
                   <span className="field-value">Zvonimir Kožul</span>
                 </div>
                 <div className="terminal-field">
-                  <span className="field-key">// ROLE</span>
+                  <span className="field-key">{'// ROLE'}</span>
                   <span className="field-value">{t('hero.role')}</span>
                 </div>
                 <div className="terminal-field">
-                  <span className="field-key">// LOCATION</span>
+                  <span className="field-key">{'// LOCATION'}</span>
                   <span className="field-value">Široki Brijeg, BiH</span>
                 </div>
                 <div className="terminal-field">
-                  <span className="field-key">// STATUS</span>
+                  <span className="field-key">{'// STATUS'}</span>
                   <span className="field-value status-value">{t('hero.status')}</span>
                 </div>
 
                 <div className="terminal-prompt-line">
-                  <span className="tagline-prompt">$</span> connect --target zvonimirkozul.dev<span className="cursor-blink">▌</span>
+                  <span className="tagline-prompt">$</span> connect --target zvonekozul.com<span className="cursor-blink">▌</span>
                 </div>
               </div>
             </motion.div>
