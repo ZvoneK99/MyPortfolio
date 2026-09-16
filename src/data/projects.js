@@ -1,3 +1,10 @@
+import gtransLogo from '../Datoteke/Projekti/gtrans.png';
+import ciakTradeLogo from '../Datoteke/Projekti/ciak-trade.png';
+import milTransLogo from '../Datoteke/Projekti/mil-trans.png';
+import centralStationLogo from '../Datoteke/Projekti/csf.png';
+import espomenikLogo from '../Datoteke/Projekti/espomenik.jpeg';
+import tomospedLogo from '../Datoteke/Projekti/tomosped.png';
+
 export const projects = [
   {
     id: 1,
@@ -8,6 +15,7 @@ export const projects = [
     github: null,
     live: 'https://gtrans.ba/',
     featured: true,
+    logo: gtransLogo,
   },
   {
     id: 2,
@@ -18,6 +26,7 @@ export const projects = [
     github: null,
     live: 'https://ciak-trade.ba/',
     featured: true,
+    logo: ciakTradeLogo,
   },
   {
     id: 3,
@@ -28,16 +37,18 @@ export const projects = [
     github: null,
     live: 'https://www.mil-trans.eu/',
     featured: false,
+    logo: milTransLogo,
   },
   {
-    id: 4,
-    title: 'Bulk.ba',
-    description: 'Full-featured B2C webshop selling electronics, smartphones, gaming gear, watches, and more. Includes product catalog with discounts, shopping cart, user login, and secure card payments via Monri WebPay. Includes a CMS for content management.',
+    id: 13,
+    title: 'eSpomenik',
+    description: 'Digital memorial platform developed at AVE STUDIO — my most complex project to date. Lets families create a lasting online memorial for loved ones, with interactive grave-location mapping (Leaflet.js), photo uploads with automatic resizing, and scheduled email notifications. Includes a CMS for platform administrators and a separate admin panel for profile owners to manage their own memorial page.',
     tags: ['JavaScript', 'Bootstrap', 'C#', '.NET', 'MySQL'],
     org: 'AVE STUDIO',
     github: null,
-    live: 'https://bulk.ba/',
-    featured: false,
+    live: 'https://espomenik.ba/',
+    featured: true,
+    logo: espomenikLogo,
   },
   {
     id: 5,
@@ -48,6 +59,7 @@ export const projects = [
     github: null,
     live: 'https://karateklubsiroki.com/',
     featured: false,
+    logo: '/logos/kksiroki.svg',
   },
   {
     id: 6,
@@ -58,6 +70,18 @@ export const projects = [
     github: null,
     live: 'https://central-station.ba/',
     featured: false,
+    logo: centralStationLogo,
+  },
+  {
+    id: 14,
+    title: 'TOMOŠPED',
+    description: 'B2B e-commerce platform developed at AVE STUDIO for a local retailer — a webshop for toys, school, and office supplies. Features user accounts, product search, and card payment integration.',
+    tags: ['JavaScript', 'Bootstrap', 'C#', '.NET', 'MySQL'],
+    org: 'AVE STUDIO',
+    github: null,
+    live: 'https://tomosped.com/',
+    featured: false,
+    logo: tomospedLogo,
   },
   {
     id: 7,

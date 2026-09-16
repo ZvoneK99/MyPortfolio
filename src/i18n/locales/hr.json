@@ -7,6 +7,7 @@
     "contact": "Kontakt"
   },
   "hero": {
+    "status": "Dostupan za nove projekte",
     "greeting": "Pozdrav, ja sam",
     "role": "Softverski inženjer",
     "tagline": "Full Stack Developer | .NET · React · MySQL",
@@ -16,9 +17,9 @@
   "about": {
     "title": "O",
     "titleHighlight": "meni",
-    "bio1": "Bok, ja sam <strong>Zvonimir Kožul</strong> — strastveni Full Stack Developer iz Širokog Brijega. Specijaliziram se za izgradnju robusnih web aplikacija od temelja, kombinirajući čisto, responzivno sučelje s pouzdanim i skalabilnim backendom.",
-    "bio2": "Na frontendu radim s <strong>Reactom</strong> i modernim JavaScript/TypeScriptom. Na backendu gradim API-je i servise s <strong>C# / .NET</strong>-om, koristeći <strong>MySQL</strong> kao primarnu relacijsku bazu podataka.",
-    "bio3": "Volim pretvarati složene probleme u jednostavna, elegantna rješenja — i uvijek tražim novi izazov kojim mogu napredovati kao inženjer.",
+    "bio1": "Bok, ja sam <strong>Zvonimir Kožul</strong> — Full Stack Developer iz Širokog Brijega. U programiranje me uveo fakultet (FSRE), i otad me drži ista stvar koja me zakvačila na početku — kad ideja iz glave postane nešto što stvarno radi.",
+    "bio2": "Najviše mi leži kad mogu proći kroz cijeli proces: od baze podataka i backend logike u <strong>C# / .NET</strong>-u, preko API-ja, do sučelja koje netko stvarno koristi u <strong>Reactu</strong>. Ne volim se zadržavati samo na jednom dijelu stoga.",
+    "bio3": "Trenutno produbljujem znanje u C#-u i Reactu kroz konkretne projekte, na poslu i van njega — najviše učim tako da nešto stvarno napravim, a ne iz teorije.",
     "statTech": "Tehnologije",
     "statProjects": "Projekti",
     "statLocation": "Lokacija"
@@ -37,8 +38,6 @@
     "p2desc": "B2B webshop za distributera auto kozmetike, pribora i poljoprivredne opreme sa sjedištem u Brčkom. Uključuje klizač slika, katalog proizvoda, prijavu korisnika i kontakt podatke.",
     "p3title": "MIL-TRANS",
     "p3desc": "Web stranica za lokalnu tvrtku za prijevoz tereta iz Širokog Brijega koja pruža domaći i međunarodni transport. Uključuje statistički pregled, blog s newsletterom, sekciju za karijere te kontakt putem WhatsAppa, Vibera i e-maila. Sadrži CMS za upravljanje sadržajem.",
-    "p4title": "Bulk.ba",
-    "p4desc": "Potpuno opremljeni B2C webshop za prodaju elektronike, pametnih telefona, gaming opreme, satova i više. Uključuje katalog proizvoda s popustima, košaricu, prijavu korisnika i sigurno plaćanje karticom putem Monri WebPay-a. Sadrži CMS za upravljanje sadržajem.",
     "p5title": "Karate Klub Široki",
     "p5desc": "Web stranica karate kluba s 25+ godina tradicije u Širokom Brijegu. Uključuje vijesti s turnira i obavijesti, foto galeriju, sekcije za trenere i članove, brojače postignuća te veze na društvene mreže. Sadrži CMS za upravljanje sadržajem.",
     "p6title": "Central Station",
@@ -54,7 +53,11 @@
     "p11title": "NFC Relay System",
     "p11desc": "Fakultetski projekt — dvodjelni sustav: React Native mobilna aplikacija čita NFC tagove i šalje podatke u Supabase, dok React + Vite web dashboard prima ažuriranja u stvarnom vremenu putem WebSocketa i prikazuje svako skeniranje kao karticu.",
     "p12title": "Currency Calculator",
-    "p12desc": "Osobni projekt za učenje — React aplikacija za konverziju valuta u stvarnom vremenu. Dohvaća aktualne tečajeve s vanjskog API-ja i podržava konverziju između više valuta."
+    "p12desc": "Osobni projekt za učenje — React aplikacija za konverziju valuta u stvarnom vremenu. Dohvaća aktualne tečajeve s vanjskog API-ja i podržava konverziju između više valuta.",
+    "p13title": "eSpomenik",
+    "p13desc": "Digitalna platforma za spomen-stranice preminulih, izrađena u AVE STUDIU — moj dosad najkompleksniji projekt. Omogućuje obiteljima izradu trajne online uspomene na voljene osobe, s interaktivnom kartom lokacije groba (Leaflet.js), učitavanjem fotografija s automatskim smanjivanjem veličine te zakazanim e-mail obavijestima. Sadrži CMS za administratore platforme i zaseban administratorski panel za vlasnike profila radi upravljanja vlastitom stranicom.",
+    "p14title": "TOMOŠPED",
+    "p14desc": "B2B e-commerce platforma izrađena u AVE STUDIU za lokalnog trgovca — webshop za igračke te školski i uredski pribor. Uključuje korisničke račune, pretragu proizvoda i integraciju kartičnog plaćanja."
   },
   "experience": {
     "title": "Radno",

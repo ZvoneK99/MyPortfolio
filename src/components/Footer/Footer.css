@@ -1,7 +1,7 @@
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 40px 0 28px;
-  background: rgba(3, 7, 18, 0.6);
+  background: rgba(6, 8, 10, 0.6);
 }
 
 .footer-inner {
@@ -15,33 +15,28 @@
 .footer-brand {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #f1f5f9;
-  letter-spacing: -1px;
+  color: #f1f5f2;
+  letter-spacing: -0.5px;
 }
 
 .footer-brand-inline {
   font-size: 1rem;
   font-weight: 800;
-  color: #f1f5f9;
-  letter-spacing: -1px;
+  color: #f1f5f2;
+  letter-spacing: -0.5px;
 }
 
 .brand-dot {
-  color: #06B6D4;
+  color: #39FF88;
 }
 
 .footer-text {
-  font-size: 0.85rem;
-  color: #64748b;
+  font-size: 0.8rem;
+  color: #4b5a53;
   margin: 0;
   display: flex;
   align-items: center;
   gap: 5px;
-}
-
-.heart-icon {
-  color: #ef4444;
-  font-size: 0.8rem;
 }
 
 .footer-socials {
@@ -52,29 +47,28 @@
 .footer-social {
   width: 36px;
   height: 36px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #64748b;
+  color: #8a998f;
   font-size: 0.95rem;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .footer-social:hover {
-  color: #06B6D4;
-  border-color: rgba(6, 182, 212, 0.35);
-  background: rgba(6, 182, 212, 0.08);
+  color: #39FF88;
+  border-color: rgba(57, 255, 136, 0.35);
+  background: rgba(57, 255, 136, 0.08);
 }
 
 .footer-copy {
   text-align: center;
-  font-size: 0.78rem;
-  color: #334155;
+  font-size: 0.75rem;
+  color: #3a4540;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   padding-top: 20px;
 }
-

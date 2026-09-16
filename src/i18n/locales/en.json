@@ -7,6 +7,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "status": "Available for new projects",
     "greeting": "Hi there, I'm",
     "role": "Software Engineer",
     "tagline": "Full Stack Developer | .NET · React · MySQL",
@@ -16,9 +17,9 @@
   "about": {
     "title": "About",
     "titleHighlight": "Me",
-    "bio1": "Hi, I'm <strong>Zvonimir Kožul</strong> — a passionate Full Stack Developer based in Široki Brijeg. I specialize in building robust web applications from the ground up, combining a clean, responsive frontend with a solid, scalable backend.",
-    "bio2": "On the frontend I work with <strong>React</strong> and modern JavaScript/TypeScript. On the backend I build APIs and services with <strong>C# / .NET</strong>, using <strong>MySQL</strong> as my go-to relational database.",
-    "bio3": "I love turning complex problems into simple, beautiful solutions — and I'm always looking for the next challenge to grow as an engineer.",
+    "bio1": "Hi, I'm <strong>Zvonimir Kožul</strong> — a Full Stack Developer based in Široki Brijeg. I got into programming through college (FSRE), and what hooked me back then still does now — watching an idea turn into something that actually works.",
+    "bio2": "I'm happiest when I get to work across the whole stack: databases and backend logic in <strong>C# / .NET</strong>, APIs in between, and a <strong>React</strong> frontend someone actually uses. I don't love sticking to just one layer.",
+    "bio3": "Right now I'm deepening my C# and React skills through real projects, at work and outside of it — I learn best by building, not by reading about it.",
     "statTech": "Technologies",
     "statProjects": "Projects",
     "statLocation": "Location"
@@ -37,8 +38,6 @@
     "p2desc": "B2B webshop for a Brčko-based distributor of auto cosmetics, accessories, and agricultural equipment. Features an image carousel, product catalog, user login, and contact details.",
     "p3title": "MIL-TRANS",
     "p3desc": "Business website for a local transport company in Široki Brijeg offering domestic and international freight. Features a stats dashboard, blog with newsletter, careers section, and contact via WhatsApp, Viber, and email. Includes a CMS for content management.",
-    "p4title": "Bulk.ba",
-    "p4desc": "Full-featured B2C webshop selling electronics, smartphones, gaming gear, watches, and more. Includes product catalog with discounts, shopping cart, user login, and secure card payments via Monri WebPay. Includes a CMS for content management.",
     "p5title": "Karate Klub Široki",
     "p5desc": "Club website for a karate club with 25+ years of history in Široki Brijeg. Features tournament news and announcements, photo gallery, coach and member sections, achievement counters, and social media links. Includes a CMS for content management.",
     "p6title": "Central Station",
@@ -54,7 +53,11 @@
     "p11title": "NFC Relay System",
     "p11desc": "College project — a two-part system: a React Native mobile app scans NFC tags and POSTs the data to Supabase, while a React + Vite web dashboard receives live updates via WebSocket and displays each scan as a card in real time.",
     "p12title": "Currency Calculator",
-    "p12desc": "A personal learning project — a React app for real-time currency conversion. Fetches live exchange rates from an external API and supports conversion between multiple currencies."
+    "p12desc": "A personal learning project — a React app for real-time currency conversion. Fetches live exchange rates from an external API and supports conversion between multiple currencies.",
+    "p13title": "eSpomenik",
+    "p13desc": "Digital memorial platform developed at AVE STUDIO — my most complex project to date. Lets families create a lasting online memorial for loved ones, with interactive grave-location mapping (Leaflet.js), photo uploads with automatic resizing, and scheduled email notifications. Includes a CMS for platform administrators and a separate admin panel for profile owners to manage their own memorial page.",
+    "p14title": "TOMOŠPED",
+    "p14desc": "B2B e-commerce platform developed at AVE STUDIO for a local retailer — a webshop for toys, school, and office supplies. Features user accounts, product search, and card payment integration."
   },
   "experience": {
     "title": "Work",

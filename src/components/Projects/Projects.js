@@ -56,7 +56,14 @@ function Projects() {
                     <FaBuilding className="org-badge-icon" /> {project.org}
                   </span>
                 )}
-                <h5 className="project-title">{t(`projects.p${project.id}title`)}</h5>
+                <div className="project-title-row">
+                  {project.logo && (
+                    <div className="project-logo-frame">
+                      <img src={project.logo} alt="" className="project-logo" />
+                    </div>
+                  )}
+                  <h5 className="project-title">{t(`projects.p${project.id}title`)}</h5>
+                </div>
                 <p className="project-description">{t(`projects.p${project.id}desc`)}</p>
                 <div className="project-tags">
                   {project.tags.map((tag) => (
