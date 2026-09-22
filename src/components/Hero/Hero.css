@@ -222,11 +222,17 @@
   padding: 22px;
 }
 
+.hologram-wrapper {
+  width: 120px;
+  margin: 0 auto 26px;
+}
+
 .terminal-photo-frame {
   position: relative;
   width: 120px;
   height: 120px;
-  margin: 0 auto 22px;
+  overflow: hidden;
+  background: #010202;
   border: 1px solid rgba(57, 255, 136, 0.35);
 }
 
@@ -237,6 +243,7 @@
   width: 14px;
   height: 14px;
   border: 2px solid #39FF88;
+  z-index: 3;
 }
 
 .terminal-photo-frame::before {
@@ -257,6 +264,89 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hologram-image {
+  filter: blur(7px) grayscale(1) brightness(0.7) contrast(4) sepia(1) hue-rotate(68deg) saturate(6);
+  mix-blend-mode: screen;
+  opacity: 0.92;
+  animation: hologram-flicker 5s infinite;
+}
+
+.hologram-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(57, 255, 136, 0.18) 0px,
+    rgba(57, 255, 136, 0.18) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  mix-blend-mode: overlay;
+}
+
+.hologram-sweep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 18px;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(57, 255, 136, 0.55), transparent);
+  animation: hologram-sweep-move 3.2s ease-in-out infinite;
+}
+
+.hologram-base {
+  position: relative;
+  height: 14px;
+  margin: -4px auto 0;
+  width: 90px;
+}
+
+.hologram-ring {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 70px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(57, 255, 136, 0.6);
+  transform: translateX(-50%);
+  animation: hologram-ring-pulse 2.4s ease-out infinite;
+}
+
+.hologram-ring.ring-2 { animation-delay: 0.8s; }
+.hologram-ring.ring-3 { animation-delay: 1.6s; }
+
+@keyframes hologram-flicker {
+  0%, 100% { opacity: 0.92; }
+  50% { opacity: 0.78; }
+  52% { opacity: 0.98; }
+  54% { opacity: 0.7; }
+  56% { opacity: 0.92; }
+}
+
+@keyframes hologram-sweep-move {
+  0% { top: -10%; }
+  100% { top: 105%; }
+}
+
+@keyframes hologram-ring-pulse {
+  0% {
+    width: 30px;
+    height: 6px;
+    opacity: 0.9;
+    border-color: rgba(57, 255, 136, 0.9);
+  }
+  100% {
+    width: 90px;
+    height: 14px;
+    opacity: 0;
+    border-color: rgba(57, 255, 136, 0);
+  }
 }
 
 .terminal-field {

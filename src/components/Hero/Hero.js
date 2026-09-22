@@ -83,8 +83,17 @@ function Hero() {
                 <span className="terminal-card-path">~/zvonimir-kozul/profile</span>
               </div>
               <div className="terminal-card-body">
-                <div className="terminal-photo-frame">
-                  <img src={profilePhoto} alt="Zvonimir Kožul" className="terminal-photo" />
+                <div className="hologram-wrapper">
+                  <div className="terminal-photo-frame">
+                    <img src={profilePhoto} alt="Zvonimir Kožul" className="terminal-photo hologram-image" />
+                    <div className="hologram-scanlines" />
+                    <div className="hologram-sweep" />
+                  </div>
+                  <div className="hologram-base">
+                    <span className="hologram-ring ring-1" />
+                    <span className="hologram-ring ring-2" />
+                    <span className="hologram-ring ring-3" />
+                  </div>
                 </div>
 
                 <div className="terminal-field">
