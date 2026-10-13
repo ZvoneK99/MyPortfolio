@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -8,6 +9,7 @@ import './CvTeaser.css';
 
 const GLYPHS = '01█▓▒░#@$%&*+=<>/\\';
 const LOG_THRESHOLDS = [5, 30, 60, 90];
+const ALARM_SECONDS = 3;
 
 const randomGlyphs = (length) =>
   Array.from({ length }, () => GLYPHS[Math.floor(Math.random() * GLYPHS.length)]).join('');
@@ -28,6 +30,7 @@ function CvTeaser() {
   const { t } = useTranslation();
   const [phase, setPhase] = useState('idle');
   const [progress, setProgress] = useState(0);
+  const [count, setCount] = useState(ALARM_SECONDS);
 
   useEffect(() => {
     if (phase !== 'running') return undefined;
@@ -38,8 +41,35 @@ function CvTeaser() {
   }, [phase]);
 
   useEffect(() => {
-    if (phase === 'running' && progress >= 99) setPhase('denied');
+    if (phase === 'running' && progress >= 99) {
+      setCount(ALARM_SECONDS);
+      setPhase('alarm');
+    }
   }, [phase, progress]);
+
+  useEffect(() => {
+    if (phase !== 'alarm') return undefined;
+    if (count <= 0) {
+      setPhase('denied');
+      return undefined;
+    }
+    const id = setTimeout(() => setCount((c) => c - 1), 1000);
+    return () => clearTimeout(id);
+  }, [phase, count]);
+
+  useEffect(() => {
+    if (phase !== 'alarm') return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setPhase('denied');
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [phase]);
 
   const startDecrypt = () => {
     setProgress(0);
@@ -56,7 +86,7 @@ function CvTeaser() {
   ];
   const lockedFields = ['EDUCATION', 'LANGUAGES', 'PHONE', 'REFERENCES'];
   const logs = [1, 2, 3, 4].map((n) => t(`cv.log${n}`));
-  const visibleLogs = LOG_THRESHOLDS.filter((limit) => progress >= limit || phase === 'denied').length;
+  const visibleLogs = LOG_THRESHOLDS.filter((limit) => progress >= limit).length;
 
   return (
     <section id="cv" className="cv-section">
@@ -160,6 +190,17 @@ function CvTeaser() {
           </div>
         </motion.div>
       </Container>
+
+      {phase === 'alarm' &&
+        createPortal(
+          <div className="cv-alarm" role="alertdialog" aria-live="assertive" onClick={() => setPhase('denied')}>
+            <div className="cv-alarm-title">{`⚠ ${t('cv.alarmTitle')} ⚠`}</div>
+            <div className="cv-alarm-count">{count}</div>
+            <div className="cv-alarm-text">{t('cv.alarmText')}</div>
+            <div className="cv-alarm-skip">{t('cv.skip')}</div>
+          </div>,
+          document.body
+        )}
     </section>
   );
 }
