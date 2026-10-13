@@ -2,10 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload, FaArrowDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import profilePhoto from '../../Datoteke/profilna.jpeg';
-import cvFile from "../../Datoteke/CV/Zvonimir Kožul's Resume.pdf";
 import './Hero.css';
 
 function Hero() {
@@ -48,11 +47,11 @@ function Hero() {
                 <Link to="projects" smooth duration={600} offset={-70}>
                   <button className="btn-terminal-primary hero-btn">{t('hero.viewProjects')} →</button>
                 </Link>
-                <a href={cvFile} download="Zvonimir Kožul's Resume.pdf" className="hero-btn-link">
+                <Link to="cv" smooth duration={600} offset={-70}>
                   <button className="btn-terminal-outline hero-btn">
-                    <FaFileDownload className="me-2" /> {t('hero.downloadCV')}
+                    <FaFileAlt className="me-2" /> {t('hero.viewCV')}
                   </button>
-                </a>
+                </Link>
               </motion.div>
 
               <motion.div className="hero-socials" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.95 }}>

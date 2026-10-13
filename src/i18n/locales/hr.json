@@ -12,7 +12,24 @@
     "role": "Softverski inženjer",
     "tagline": "Full Stack Developer | .NET · React · MySQL",
     "viewProjects": "Pogledaj projekte",
-    "downloadCV": "Preuzmi životopis"
+    "viewCV": "Pogledaj CV"
+  },
+  "cv": {
+    "title": "Moj",
+    "titleHighlight": "CV",
+    "subtitle": "Skraćena verzija je javna. Cijeli dokument je šifriran. Misliš da ga možeš razbiti?",
+    "encrypted": "Šifrirano",
+    "prompt": "unlock --key ???",
+    "decrypt": "Dešifriraj",
+    "decrypting": "Dešifriram...",
+    "log1": "zaobilazim firewall...",
+    "log2": "razbijam AES-256 šifru...",
+    "log3": "dešifriram cv.pdf...",
+    "log4": "potrebno plaćanje: 5000 KM",
+    "denied": "PRISTUP ODBIJEN",
+    "joke": "Šalu na stranu. Javi mi se i pošaljem ti cijeli CV.",
+    "whatsapp": "Javi mi se na WhatsApp",
+    "directDownload": "ili ga samo preuzmi"
   },
   "about": {
     "title": "O",

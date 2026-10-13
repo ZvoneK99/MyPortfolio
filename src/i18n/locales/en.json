@@ -12,7 +12,24 @@
     "role": "Software Engineer",
     "tagline": "Full Stack Developer | .NET · React · MySQL",
     "viewProjects": "View Projects",
-    "downloadCV": "Download CV"
+    "viewCV": "View CV"
+  },
+  "cv": {
+    "title": "Get my",
+    "titleHighlight": "CV",
+    "subtitle": "The short version is public. The full file is encrypted. Think you can crack it?",
+    "encrypted": "Encrypted",
+    "prompt": "unlock --key ???",
+    "decrypt": "Decrypt",
+    "decrypting": "Decrypting...",
+    "log1": "bypassing firewall...",
+    "log2": "cracking AES-256 cipher...",
+    "log3": "decrypting cv.pdf...",
+    "log4": "payment required: 5000 BAM",
+    "denied": "ACCESS DENIED",
+    "joke": "Just kidding. Text me and I'll send the full CV over.",
+    "whatsapp": "Text me on WhatsApp",
+    "directDownload": "or just download it"
   },
   "about": {
     "title": "About",
