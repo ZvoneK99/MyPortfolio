@@ -76,6 +76,8 @@
     "p12desc": "Osobni projekt za učenje — React aplikacija za konverziju valuta u stvarnom vremenu. Dohvaća aktualne tečajeve s vanjskog API-ja i podržava konverziju između više valuta.",
     "p13title": "eSpomenik",
     "p13desc": "Digitalna platforma za spomen-stranice preminulih, izrađena u AVE STUDIU — moj dosad najkompleksniji projekt. Omogućuje obiteljima izradu trajne online uspomene na voljene osobe, s interaktivnom kartom lokacije groba (Leaflet.js), učitavanjem fotografija s automatskim smanjivanjem veličine te zakazanim e-mail obavijestima. Sadrži CMS za administratore platforme i zaseban administratorski panel za vlasnike profila radi upravljanja vlastitom stranicom.",
+    "p15title": "SnapEvent",
+    "p15desc": "Osobni projekt — web platforma na kojoj gosti skeniraju QR kod i odmah dijele fotografije sa svojih mobitela, bez aplikacije i registracije. Fotografije se prije slanja smanjuju i komprimiraju u pregledniku, uz pouzdan red slanja (ponovni pokušaji, detekcija offline stanja, IndexedDB). Uključuje vlastiti CMS za mladence s galerijom, slideshowom preko cijelog ekrana, TV prezentacijom uživo i preuzimanjem svih fotografija u ZIP-u, te admin panel za događaje, QR kodove i ograničenja fotografija.",
     "p14title": "TOMOŠPED",
     "p14desc": "B2B e-commerce platforma izrađena u AVE STUDIU za lokalnog trgovca — webshop za igračke te školski i uredski pribor. Uključuje korisničke račune, pretragu proizvoda i integraciju kartičnog plaćanja."
   },

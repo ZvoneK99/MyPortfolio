@@ -4,8 +4,20 @@ import milTransLogo from '../Datoteke/Projekti/mil-trans.png';
 import centralStationLogo from '../Datoteke/Projekti/csf.png';
 import espomenikLogo from '../Datoteke/Projekti/espomenik.jpeg';
 import tomospedLogo from '../Datoteke/Projekti/tomosped.png';
+import snapeventLogo from '../Datoteke/Projekti/snapevent.jpg';
 
 export const projects = [
+  {
+    id: 15,
+    title: 'SnapEvent',
+    description: 'Personal project — a web platform where guests scan a QR code and instantly share photos from their phones, with no app or registration. Photos are resized and compressed in the browser before upload, with a resilient upload queue (retries, offline detection, IndexedDB). Includes a custom CMS for couples with gallery, fullscreen slideshow, live TV presentation, and bulk ZIP download, plus an admin panel for events, QR codes, and photo limits.',
+    tags: ['JavaScript', 'C#', '.NET', 'MSSQL'],
+    org: 'Personal',
+    github: null,
+    live: 'https://snapevent.net/',
+    featured: true,
+    logo: snapeventLogo,
+  },
   {
     id: 1,
     title: 'G TRANS',
