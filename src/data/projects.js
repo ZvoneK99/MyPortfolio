@@ -5,6 +5,7 @@ import centralStationLogo from '../Datoteke/Projekti/csf.png';
 import espomenikLogo from '../Datoteke/Projekti/espomenik.jpeg';
 import tomospedLogo from '../Datoteke/Projekti/tomosped.png';
 import snapeventLogo from '../Datoteke/Projekti/snapevent.jpg';
+import totaltradeLogo from '../Datoteke/Projekti/totaltrade.png';
 
 export const projects = [
   {
@@ -17,6 +18,17 @@ export const projects = [
     live: 'https://snapevent.net/',
     featured: true,
     logo: snapeventLogo,
+  },
+  {
+    id: 16,
+    title: 'TotalTrade',
+    description: 'Responsive web shop developed at AVE STUDIO in ASP.NET. Migrated a legacy PrestaShop store to a custom application on the same domain, preserving search ranking with 301 redirects. Features secure customer registration, login and ordering, an optimized MSSQL catalog, and checkout with installment financing (Mikrofin) and card payments (Monri).',
+    tags: ['JavaScript', 'Bootstrap', '.NET', 'MSSQL'],
+    org: 'AVE STUDIO',
+    github: null,
+    live: 'https://total-trade.ba/',
+    featured: true,
+    logo: totaltradeLogo,
   },
   {
     id: 1,

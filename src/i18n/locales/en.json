@@ -78,6 +78,8 @@
     "p13desc": "Digital memorial platform developed at AVE STUDIO — my most complex project to date. Lets families create a lasting online memorial for loved ones, with interactive grave-location mapping (Leaflet.js), photo uploads with automatic resizing, and scheduled email notifications. Includes a CMS for platform administrators and a separate admin panel for profile owners to manage their own memorial page.",
     "p15title": "SnapEvent",
     "p15desc": "Personal project — a web platform where guests scan a QR code and instantly share photos from their phones, with no app or registration. Photos are resized and compressed in the browser before upload, with a resilient upload queue (retries, offline detection, IndexedDB). Includes a custom CMS for couples with gallery, fullscreen slideshow, live TV presentation, and bulk ZIP download, plus an admin panel for events, QR codes, and photo limits.",
+    "p16title": "TotalTrade",
+    "p16desc": "Responsive web shop developed at AVE STUDIO in ASP.NET. Migrated a legacy PrestaShop store to a custom application on the same domain, preserving search ranking with 301 redirects. Features secure customer registration, login and ordering, an optimized MSSQL catalog, and checkout with installment financing (Mikrofin) and card payments (Monri).",
     "p14title": "TOMOŠPED",
     "p14desc": "B2B e-commerce platform developed at AVE STUDIO for a local retailer — a webshop for toys, school, and office supplies. Features user accounts, product search, and card payment integration."
   },
